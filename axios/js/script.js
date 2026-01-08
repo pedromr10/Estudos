@@ -61,3 +61,42 @@ const printData = async() => {
     });
 }
 printData();
+
+// 4 - definindo headers:
+const getData2 = async() => {
+    try {
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users", {
+            headers:{
+                "Content-Type": "application/json",
+                custom: "header"
+            }
+        }
+    );
+
+        console.log(response);
+        
+        return response.data;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+const receiveData2 = async() =>{
+    const data = await getData2();
+    console.log(data);
+}
+receiveData2();
+
+// 5 - requisicao de post:
+const form = document.querySelector("#post-form");
+const titleInput = document.querySelector("#title");
+const bodyInput = document.querySelector("#body");
+
+form.addEventListener("submit",(e)=>{
+    e.preventDefault(); //permite que a pagina nao recarregue ao usuario apertar o botao, o que seria um comportamento comum.
+    axios.post("https://jsonplaceholder.typicode.com/posts",{
+            title: titleInput.value,
+            body: bodyInput.value,
+            userId: 1
+    });
+});
