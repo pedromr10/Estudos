@@ -1,5 +1,5 @@
 # 📚 Estudos
-Um repositório dedicado a estudos de programação, testes e criações bizonhas.
+Um repositório dedicado a estudos de programação, testes e criações bizonhas. a
 
 
 ## 🔗 Axios:
