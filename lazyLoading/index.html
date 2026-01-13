@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="header-container">
+            <h1>Florestas pelo Mundo</h1>
+        </div>
+    </header>
+    <div id="container">
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9yZXN0fGVufDB8fDB8fHww" alt="floresta_1">
+            <!--
+            obs: em todos os src's das imagens tem um ...?w=10...
+            isso seria o width da imagem original.
+            neste estudo, abaixaremos até = 10, para realizar o efeito de lazy loading 
+            -->
+            <p>Floresta 1</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zm9yZXN0fGVufDB8fDB8fHww" alt="floresta_2">
+            <p>Floresta 2</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9yZXN0fGVufDB8fDB8fHww" alt="floresta_3">
+            <p>Floresta 3</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1542202229-7d93c33f5d07?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" alt="floresta_4">
+            <p>Floresta 4</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1473448912268-2022ce9509d8?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" alt="floresta_5">
+            <p>Floresta 5</p>
+        </div>
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?w=10&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" alt="floresta_6">
+            <p>Floresta 6</p>
+        </div>
+    </div>
+</body>
+</html>
