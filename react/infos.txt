@@ -1,0 +1,24 @@
+- Como ver a versão do node.js:
+    1. abra o cmd
+    2. digite "node -v"
+
+- Como ver a versão do npm:
+    1. abra o cmd
+    2. digite "npm -v"
+
+- Como criar um ambiente usando Vite:
+    1. abra o cmd
+    2. digite "npm create vite@latest"
+    3. adicionar o nome do projeto
+    4. adicionar ambiente
+    5. adicionar linguagem
+
+- Como rodar o ambiente:
+    1. digite "npm run dev"
+
+- Estrutura do projeto:
+    1. node_modules: dependências do projeto
+    2. public: assets e arquivos estáticos
+    3. src: onde fica o código da aplicação
+    4. src/index.js: arquivo de inicialização da aplicação
+    5. src/App.js: componente principal inicial
