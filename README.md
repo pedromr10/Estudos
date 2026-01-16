@@ -7,3 +7,6 @@ Axios é uma biblioteca JavaScript usada para fazer requisições HTTP a APIs de
 
 ## ⏳ Lazy loading:
 Lazy loading é um método de carregamento de informações de uma página apenas quando necessário. Isso economiza dados e processamento, além de deixar o carregamento mais rápido.
+
+## ⚛️ React:
+React é uma biblioteca JavaScript para criar interfaces de usuário de forma rápida, modular e eficiente, usando componentes reutilizáveis.
