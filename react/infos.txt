@@ -22,3 +22,12 @@
     3. src: onde fica o código da aplicação
     4. src/index.js: arquivo de inicialização da aplicação
     5. src/App.js: componente principal inicial
+
+- Comentários em jsx:
+    1. //comentario
+    2. {/* comentario */}
+
+- Ao criar um novo componente:
+    1. Para não precisar criar a arrow function, exportar, digite: rafce + tab
+    2. Antes do return é js puro, depois do return é jsx
+    3. O que estiver entre chaves "{}" é javascript
