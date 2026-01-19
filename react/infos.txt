@@ -31,3 +31,7 @@
     1. Para não precisar criar a arrow function, exportar, digite: rafce + tab
     2. Antes do return é js puro, depois do return é jsx
     3. O que estiver entre chaves "{}" é javascript
+
+- Hooks:
+    1. Hooks em React são funções especiais que permitem usar recursos do React (como estado e efeitos) dentro de componentes funcionais, sem precisar usar classes. 
+    2. "se o valor muda e precisa aparecer na tela, usa o state"
