@@ -35,3 +35,19 @@
 - Hooks:
     1. Hooks em React são funções especiais que permitem usar recursos do React (como estado e efeitos) dentro de componentes funcionais, sem precisar usar classes. 
     2. "se o valor muda e precisa aparecer na tela, usa o state"
+
+- Props:
+    1. Permite a passagem de dados de um componente pai para um componente filho
+    2. Útil para quando houver dados vindos de um banco de dados
+    3. Normalmente, em componentes, há mais de um Props
+    4. Para facilitar o uso dos props, é comum desestruturas no parâmetro da função do componente
+
+- Map:
+    1. Invoca a função callback passada por argumento para cada elemento do array e devolve um novo array como resultado
+    2. Estrutura básica: array.map((item) => item * 3);
+
+- Children:
+    1. É uma prop especial do React que representa tudo o que você coloca entre a abertura e o fechamento de um componente
+
+- State lift:
+    1. Leva um valor do componente filho pro componente pai
