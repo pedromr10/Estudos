@@ -39,7 +39,7 @@
 - Props:
     1. Permite a passagem de dados de um componente pai para um componente filho
     2. Útil para quando houver dados vindos de um banco de dados
-    3. Normalmente, em componentes, há mais de um Props
+    3. Normalmente, em componentes, há mais de um Prop
     4. Para facilitar o uso dos props, é comum desestruturas no parâmetro da função do componente
 
 - Map:
@@ -51,3 +51,10 @@
 
 - State lift:
     1. Leva um valor do componente filho pro componente pai
+
+- CSS de componente:
+    1. É utilizado apenas em um componente em específico
+    2. não é scoped, ou seja, pode "vazar" para outros elementos do projeto
+
+- CSS Modules:
+    1. Permite deixar o css scoped, funcionando apenas para um componente em questao
