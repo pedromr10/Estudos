@@ -1,4 +1,4 @@
-public class Main
+public class TiposDeDados
 {
 	public static void main(String[] args) {
         //1 - tipos de dados:
