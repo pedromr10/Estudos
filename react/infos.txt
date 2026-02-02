@@ -58,3 +58,20 @@
 
 - CSS Modules:
     1. Permite deixar o css scoped, funcionando apenas para um componente em questao
+
+- JSON Server:
+    1. é um pacote npm
+    2. simula uma api, possibilitando requisições HTTP
+    3. para instalar: "npm i json-server"
+    4. para rodar:
+        4.1 utilizar outro terminal
+        4.2 entrar na pasta do projeto
+        4.3 utilizar o comando "npm run server"
+
+- useEffect:
+    1. faz com que seja possível controlar a execução de uma ação
+
+- resgatando dados de api:
+    1. usar o useState para salvar dados
+    2. usar useEffect para chamar api apenas quando necessario
+    3. realizar a requisicao da api com alguma ferramenta, axios ou fetch api
