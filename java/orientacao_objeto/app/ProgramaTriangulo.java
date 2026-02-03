@@ -11,8 +11,6 @@ public class ProgramaTriangulo{
         x = new Triangulo();
         y = new Triangulo();
 
-        double px = 0.0, py = 0.0, areax = 0.0, areay = 0.0;
-
         System.out.println("Enter the measures of triangle X:");
         x.a = sc.nextDouble();
         x.b = sc.nextDouble();
@@ -22,19 +20,19 @@ public class ProgramaTriangulo{
         y.b = sc.nextDouble();
         y.c = sc.nextDouble();
 
-        px = (x.a+x.b+x.c)/2;
-        py = (y.a+y.b+y.c)/2;
-        areax = Math.sqrt(px*(px-x.a)*(px-x.b)*(px-x.c));
-        areay = Math.sqrt(py*(py-y.a)*(py-y.b)*(py-y.c));
+        double areaX = x.area();
+        double areaY = y.area();
 
-        System.out.printf("Triangle X area: %.4f%n", areax);
-        System.out.printf("Triangle Y area: %.4f%n", areay);
+        System.out.printf("Triangle X area: %.4f%n", areaX);
+        System.out.printf("Triangle Y area: %.4f%n", areaY);
         
-        if(areax > areay){
+        if(areaX > areaY){
             System.out.println("Larger area: X");
         }
         else{
             System.out.println("Larger area: Y");
         }
+
+        sc.close();
     }
 }
