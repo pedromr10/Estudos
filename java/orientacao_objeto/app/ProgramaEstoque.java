@@ -1,7 +1,7 @@
 package orientacao_objeto.app;
 
 import java.util.Scanner;
-import orientacao_objeto.entities.Produto;;
+import orientacao_objeto.entities.Produto;
 
 public class ProgramaEstoque {
     public static void main(String[] args){
