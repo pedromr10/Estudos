@@ -16,4 +16,9 @@ public class Produto {
     public void removeProducts(int remQtd){
         quantidade-=remQtd;
     }
+
+    //outras funcionalidades:
+    public String toString(){
+        return nome;
+    }
 }

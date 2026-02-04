@@ -36,8 +36,9 @@ public class ProgramaEstoque {
         pd.removeProducts(removeQuantity);
         System.out.printf("Updated data: %s, $ %.2f, %d units, Total: $ %.2f%n", pd.nome, pd.preco, pd.quantidade, pd.totalValueInStock());     
 
-
-
+        //outras funcionalidades:
+        System.out.println(pd.toString()); //se tirar o toString da no mesmo, o java entende que imprimir so o pd seria imprimir o toString
+        
         sc.close();
     }
 }
