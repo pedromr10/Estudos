@@ -1,0 +1,1 @@
+polimorfismo (variaveis de mesmo tipo se comportando de formas diferentes) é um recurso que permite que variáveis de um mesmo tipo mais genérico possam apontar para objetos de tipos específicos diferentes, tendo assim comportamentos diferentes conforme cada tipo específico.

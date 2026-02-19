@@ -9,3 +9,7 @@ ex: um banco possui conta bancaria comum e conta bancaria business. a business c
 upcasting: casting/converter da subclasse para superclasse. usado em polimorfismo;
 
 downcasting: casting/converter da superclasse para subclasse. usado quando há metodos que recebem parâmetros genéricos (ex: equals); instanceof
+
+sobreposicao ou sobrescrita: é quando implementa um método da superclasse na subclasse
+
+classes e métodos final: evita que a classe seja herdada, sobreposto. estrutura: public final class... e public final void...
