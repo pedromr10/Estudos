@@ -1,29 +1,76 @@
 package composicao.exe.entities;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
 import composicao.exe.enums.WorkerLevel;
-import composicao.exe.entities.HourContract;;
+import composicao.exe.entities.HourContract;
 
 public class Worker {
     private String name;
     private WorkerLevel level;
     private Double baseSalary;
 
-    public Worker(String name, WorkerLevel level, Double baseSalary){
+    //associacao:
+    private Department department;
+    private List<HourContract> contracts = new ArrayList<>();
+
+    public Worker(String name, WorkerLevel level, Double baseSalary, Department department){
         this.name = name;
         this.level = level;
         this.baseSalary = baseSalary;
+        this.department = department;
     }
 
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public WorkerLevel getLevel() {
+        return level;
+    }
+    public void setLevel(WorkerLevel level) {
+        this.level = level;
+    }
+    public Double getBaseSalary() {
+        return baseSalary;
+    }
+    public void setBaseSalary(Double baseSalary) {
+        this.baseSalary = baseSalary;
+    }
+    public List<HourContract> getContracts() {
+        return contracts;
+    }
+    public Department getDepartment() {
+        return department;
+    }
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    //metodos:
     public void addContract(HourContract contract){
-        
+        contracts.add(contract);
     }
 
     public void removeContract(HourContract contract){
-
+        contracts.remove(contract);
     }
 
     public Double income(Integer year, Integer month){
-        return 0.0;
+        double sum = baseSalary;
+        Calendar cal = Calendar.getInstance();
+        for(HourContract contract : contracts){
+            cal.setTime(contract.getDate());
+            int contractYear = cal.get(Calendar.YEAR);
+            int contractMonth = 1+ cal.get(Calendar.MONTH); //o mes do Calendar começa em zero, por isso o +1
+            if(year == contractYear && month == contractMonth){
+                sum+=contract.totalValue();
+            }
+        }
+        return sum;
     }
 
     public String toString(){
