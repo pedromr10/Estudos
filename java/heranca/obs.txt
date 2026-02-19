@@ -1,0 +1,11 @@
+é um tipo de associacao que permite que uma classe herde todos os dados e comportamentos de outra;
+
+vantagens> reuso e polimorfismo;
+
+ex: um banco possui conta bancaria comum e conta bancaria business. a business conta com os mesmos atributos de uma conta comum, mas com algumas coisas a mais, ou seja, herda os elementos da conta comum;
+
+é uma associacao entre classes e nao entre objetos;
+
+upcasting: casting/converter da subclasse para superclasse. usado em polimorfismo;
+
+downcasting: casting/converter da superclasse para subclasse. usado quando há metodos que recebem parâmetros genéricos (ex: equals); instanceof
