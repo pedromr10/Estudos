@@ -40,9 +40,15 @@ public class Program {
         catch(ParseException e){
             System.out.println("Invalid date format");
         }
+        //ao usar extends RuntimeException, se tirar o seguinte bloco de codigo, caso ocorra algum exception de domainexception, ele quebrará o codigo
         catch(DomainException e){
             System.out.println("Error in reservation: " + e.getMessage());
         }
+        /*
+        //para que o programa nao quebre com uma outra possivel RuntimeException:
+        catch(RuntimeException e){
+            System.out.println("Unexpected error");
+        } */
         
         sc.close();
     }

@@ -16,7 +16,7 @@ public class Reservation {
 
     //propagar - utilizar o throws (joga pra quem chamou o metodo tratar) | "Se der erro, eu não vou tratar. Quem me chamou que resolva."
     //tratar - try catch
-    public Reservation(Integer roomNumber, Date checkIn, Date checkOut) throws DomainException{
+    public Reservation(Integer roomNumber, Date checkIn, Date checkOut){
         if(!checkOut.after(checkIn)){
             throw new DomainException("Check-out date must be after check-in date");
         }
@@ -45,7 +45,7 @@ public class Reservation {
     }
 
     //sem o throws DomainException eu teria de tratar aqui, colocando ele, o program terá de tratar
-    public void updateDates(Date checkIn, Date checkOut) throws DomainException{
+    public void updateDates(Date checkIn, Date checkOut){
         //note que se pegar um exception ele nao continua no codigo, ele volta ao program.java com um exception e nao finaliza o programa
         Date now = new Date();
         if(checkIn.before(now) || checkOut.before(now)){
