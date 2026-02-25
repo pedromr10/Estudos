@@ -1,18 +1,18 @@
 package interface_.semInterface.model.entities;
 
 public class Vehicle {
-    private String moodel;
+    private String model;
 
     public Vehicle(){}
     
     public Vehicle(String model){
-        this.moodel = model;
+        this.model = model;
     }
 
     public String getMoodel() {
-        return moodel;
+        return model;
     }
-    public void setMoodel(String moodel) {
-        this.moodel = moodel;
+    public void setModel(String model) {
+        this.model = model;
     }
 }
