@@ -1,0 +1,7 @@
+1. hashCode e equals sao operacoes da classe object utilizadas para comparar se um objeto é igual a outro
+2. equals : lento, resposta 100%
+    2.1 hashCode: rapido, porem resposta positiva nao é 100%
+3. tipos comuns (string date, integer, double, etc) ja possuem implementacao para essas operacoes. classes personalizadas precisam sobrepo-las
+
+4. equals: metodo que compara se o objeto é igual a outro, retornando true ou false
+    4.1 hashCode: metodo que retorna um numero inteiro representando um codigo gerado a partir das informacoes do objeto
