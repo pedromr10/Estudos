@@ -17,7 +17,8 @@ public class Program {
             ps.addValue(value);
         }
         ps.print();
-        System.out.println("First: " + ps.first());
+        Integer x = (Integer) ps.first();
+        System.out.println("First: " + x);
         sc.close();
     }
 }

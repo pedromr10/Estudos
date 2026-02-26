@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PrintService {
-    private List<Integer> list = new ArrayList<>();
+    private List<Object> list = new ArrayList<>();
 
-    public void addValue(int value){
+    public void addValue(Object value){
         list.add(value);
     }
 
-    public int first(){
+    public Object first(){
         return list.get(0);
     }
 
@@ -20,5 +20,7 @@ public class PrintService {
 }
 
 /*
-essa resolucao serve apenas para numeros, mas e caso eu queira fazer essas mesmas acoes com strings, por exemplo?
+ao utilizar o object, há problemas como type safety e de performance, uma vez q temos de usar casting, etc;
+
+nao é a melhor solucao!!
 */
