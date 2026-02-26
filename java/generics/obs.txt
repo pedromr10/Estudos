@@ -1,0 +1,3 @@
+1. os generics permitem que classes, interfaces e metodos possam ser parametrizados por tipo
+2. beneficios: reuso, seguranca de tipo e performance
+3. muito usado em colecoes
