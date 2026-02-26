@@ -3,14 +3,14 @@ package generics.model.services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PrintService {
-    private List<Object> list = new ArrayList<>();
+public class PrintService <T>{
+    private List<T> list = new ArrayList<>();
 
-    public void addValue(Object value){
+    public void addValue(T value){
         list.add(value);
     }
 
-    public Object first(){
+    public T first(){
         return list.get(0);
     }
 
@@ -20,7 +20,7 @@ public class PrintService {
 }
 
 /*
-ao utilizar o object, há problemas como type safety e de performance, uma vez q temos de usar casting, etc;
+melhor solucao
 
-nao é a melhor solucao!!
+elimina a necessidade de casting, tem seguranca de tipo
 */
