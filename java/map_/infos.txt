@@ -1,0 +1,8 @@
+1. nao admite repeticoes do objeto chave
+2. os elementos sao indexados pelo objeto chave (nao possuem posicao)
+3. acesso, insercao e remocao de elementos sao rapidos
+4. sao principalmente utilizados em cookies, local storage, qualquer modelo chave-valor
+
+* hashmap: mais rapido e nao ordenado
+* treemap: mais lento, ordenado pelo compareTo
+* linkedhashmap: velocidade intermediaria e elementos na ordem em que sao adicionados
