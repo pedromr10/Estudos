@@ -1,0 +1,4 @@
+1. nao admite repeticoes
+2. elementos nao possuem posicao
+3. acesso, insercao e remocao de elementos sao realizados de forma rapida
+4. se nao tiver o codigo de hashcode e equals implementado, ao usar o contains, o hashset procura pelo local na memoria, provavelmente dando falso
