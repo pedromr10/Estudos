@@ -13,3 +13,5 @@ public class ProductPredicate implements Predicate<Product>{
         //se for menor que 100 - retorna false
     }
 }
+
+//Em Java, Predicate<T> é uma interface funcional usada para testar uma condição sobre um objeto e retornar true ou false. Ela faz parte do pacote java.util.function e é muito usada com lambda expressions e streams.

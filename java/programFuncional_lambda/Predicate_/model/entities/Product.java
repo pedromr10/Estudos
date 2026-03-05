@@ -22,6 +22,16 @@ public class Product {
         this.price = price;
     }
 
+    //obs: metodo estatico trabalha com o produto passado como argumento (Product p)
+    public static boolean staticPredicate(Product p){
+        return p.getPrice() >= 100;
+    }
+
+    //obs: metodo nao estatico trabalha com o proprio objeto que estou
+    public boolean nonStaticPredicate(){
+        return price >= 100;
+    }
+
     @Override
     public String toString(){
         return getName() + " " + getPrice();
