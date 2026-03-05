@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import programFuncional_lambda.Predicate_.model.entities.Product;
+import programFuncional_lambda.Predicate_.util.ProductPredicate;
 
 public class Program {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class Program {
         list.add(new Product("HD Case", 80.00));
 
         //tirando os produtos que custam mais de 100 reais:
-        list.removeIf(p -> p.getPrice() >= 100);
+        list.removeIf(new ProductPredicate());
 
         for(Product p : list){
             System.out.println(p);
