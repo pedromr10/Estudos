@@ -1,0 +1,8 @@
+1. stream é uma solucao para processar sequencias de dados de forma:
+    - Declarativa 
+    - parallel-friendly
+    - sem efeitos colaterais
+    - sob demanda
+2. acesso sequencial (nao tem indice)
+3. so pode ser usada uma vez (single use)
+4. pipeline: operacoes em streams retornam novas streams. entao é possivel criar uma cadeia de operacoes
