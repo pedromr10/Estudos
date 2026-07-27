@@ -1,6 +1,6 @@
 package com.pedro.produtosapi.controller;
 
-import java.util.Optional;
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.pedro.produtosapi.model.Produto;
 import com.pedro.produtosapi.repository.ProdutoRepository;
+
+import jakarta.websocket.server.PathParam;
 
 @RestController //recebe requisicoes web
 @RequestMapping("/produtos")
@@ -57,6 +59,13 @@ public class ProdutoController {
 	public void atualizarProduto(@PathVariable("id") String id, @RequestBody Produto produto) {
 		produto.setId(id);
 		produtoRepository.save(produto);
+	}
+	
+	//buscando por parametro:
+	@GetMapping
+	public List<Produto> buscaPorParametro(@PathParam("nome") String nome){
+		return produtoRepository.findByNome(nome);
+		//exemplo de busca pelo postman: http://localhost:8080/produtos?nome=Pendrive
 	}
 	
 }
