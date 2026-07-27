@@ -3,6 +3,8 @@ package com.pedro.produtosapi.controller;
 import java.util.Optional;
 import java.util.UUID;
 
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +33,8 @@ public class ProdutoController {
 	}
 	
 	//pegar produto:
-	public Produto obterProdutoPorId(String id) {
+	@GetMapping("/{id}")
+	public Produto obterProdutoPorId(@PathVariable("id") String id) {
 		//metodo1
 		//Optional<Produto> produto = produtoRepository.findById(id);
 		//return produto.isPresent() ? produto.get() : null;
