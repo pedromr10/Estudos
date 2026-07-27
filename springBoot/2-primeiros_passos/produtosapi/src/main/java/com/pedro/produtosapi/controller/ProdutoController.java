@@ -1,7 +1,6 @@
 package com.pedro.produtosapi.controller;
 
-import com.pedro.produtosapi.repository.ProdutoRepository;
-
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.pedro.produtosapi.model.Produto;
+import com.pedro.produtosapi.repository.ProdutoRepository;
 
 @RestController //recebe requisicoes web
 @RequestMapping("/produtos")
@@ -29,4 +29,19 @@ public class ProdutoController {
 		produtoRepository.save(produto);
 		return produto;
 	}
+	
+	//pegar produto:
+	public Produto obterProdutoPorId(String id) {
+		Optional<Produto> produto = produtoRepository.findById(id);
+		return produto.isPresent() ? produto.get() : null;
+		//na operacao ternaria acima: caso o optional ache algum valor, retorna o produto.get, caso nao ache, retorna null
+	}
+	
+	
 }
+
+
+
+
+
+
