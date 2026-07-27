@@ -32,9 +32,13 @@ public class ProdutoController {
 	
 	//pegar produto:
 	public Produto obterProdutoPorId(String id) {
-		Optional<Produto> produto = produtoRepository.findById(id);
-		return produto.isPresent() ? produto.get() : null;
+		//metodo1
+		//Optional<Produto> produto = produtoRepository.findById(id);
+		//return produto.isPresent() ? produto.get() : null;
 		//na operacao ternaria acima: caso o optional ache algum valor, retorna o produto.get, caso nao ache, retorna null
+		
+		//metodo2:
+		return produtoRepository.findById(id).orElse(null);
 	}
 	
 	
