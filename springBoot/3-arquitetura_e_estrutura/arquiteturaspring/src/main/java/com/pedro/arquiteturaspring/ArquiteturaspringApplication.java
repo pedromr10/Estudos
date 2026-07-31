@@ -12,7 +12,7 @@ public class ArquiteturaspringApplication {
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(ArquiteturaspringApplication.class);
 		
 		//starta o projeto:
-		builder.run(args);
+		builder.run(args); 
 	}
 
 }
