@@ -2,6 +2,7 @@ package com.pedro.arquiteturaspring.montadora.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 
 import com.pedro.arquiteturaspring.montadora.Motor;
 import com.pedro.arquiteturaspring.montadora.TipoMotor;
@@ -10,6 +11,7 @@ import com.pedro.arquiteturaspring.montadora.TipoMotor;
 public class MontadoraConfiguration {
 	
 	@Bean(name = "motorAspirado") //objeto que o Spring cria, gerencia e injeta automaticamente
+	@Primary //basicamente caso encontre uma injecao e tenha mais de um bean e nao tenha o qualifier, constara o que tiver o primary
 	public Motor motorAspirado() {
 		var motor = new Motor();
 		motor.setCavalos(120);

@@ -17,7 +17,7 @@ import com.pedro.arquiteturaspring.montadora.Motor;
 public class TesteFabricaController {
 	
 	@Autowired //faz com que o spring procure o bean e coloque na variavel
-	@Qualifier("motorAspirado") //utilizado para dizer ao spring qual bean especifico utilizar na injecao. acontece com beans do mesmo tipo
+	//@Qualifier("motorAspirado") //utilizado para dizer ao spring qual bean especifico utilizar na injecao. acontece com beans do mesmo tipo
 	private Motor motor;
 
 	
