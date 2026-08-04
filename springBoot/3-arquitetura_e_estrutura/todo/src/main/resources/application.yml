@@ -3,3 +3,6 @@ spring:
     name: Arquitetura Spring
   jpa:
     show-sql: true
+app:
+  config:
+    variavel: teste

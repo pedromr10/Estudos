@@ -37,7 +37,7 @@ public class TodoController {
 		service.atualizarStatus(todo);
 	}
 	
-	@GetMapping("{id")
+	@GetMapping("{id}")
 	public TodoEntity buscarPorId(@PathVariable("id") Integer id) {
 		return service.buscarPorId(id);
 	}
