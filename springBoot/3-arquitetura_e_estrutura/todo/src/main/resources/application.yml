@@ -6,3 +6,4 @@ spring:
 app:
   config:
     variavel: teste
+    valor1: 500
