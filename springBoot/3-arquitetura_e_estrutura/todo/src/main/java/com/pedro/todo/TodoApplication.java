@@ -11,7 +11,7 @@ public class TodoApplication {
 		//SpringApplication.run(TodoApplication.class, args);
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(TodoApplication.class);
 		
-		builder.lazyInitialization(true); //quando colocado como true, todos os beans terao a annotation @Lazy por padrao. tomar cuidado com essa funcionalidade, pois pode omitir erros que serao acionados em runtime
+		builder.lazyInitialization(true); //quando colocado como true, todos os beans terao a annotation @Lazy por padrao. tomar cuidado com essa funcionalidade, pois pode omitir erros que serao acionados em runtime 
 	}
 
 }
