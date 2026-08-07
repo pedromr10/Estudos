@@ -12,3 +12,5 @@ Codigos de Docker para cmd:
 10. Remover uma imagem = docker rmi nome-da-imagem
 11. Ver log do container = docker logs nome-do-container
 12. Para acompanhar os logs em tempo real = docker logs -f nome-do-container
+13. Criar network (comunicação entre containers) = docker network create nome-da-network
+14. Visualizar networks = docker network ls
