@@ -1,0 +1,14 @@
+Codigos de Docker para cmd:
+
+1. Visualizar versao do docker = docker --version
+2. Visualizar imagens instaladas = docker images
+3. Baixar uma imagem = docker pull nome-da-imagem:versao
+4. Criar e iniciar um container = docker run nome-da-imagem
+5. Visualizar containers que estao rodando: docker ps
+6. Visualizar todos os containers = docker ps -a
+7. Parar um container = docker stop nome-do-container ou docker stop id-do-container
+8. Inicializar um container parado = docker start nome-do-container ou docker start id-do-container
+9. Remover container = docker rm id-do-container
+10. Remover uma imagem = docker rmi nome-da-imagem
+11. Ver log do container = docker logs nome-do-container
+12. Para acompanhar os logs em tempo real = docker logs -f nome-do-container
