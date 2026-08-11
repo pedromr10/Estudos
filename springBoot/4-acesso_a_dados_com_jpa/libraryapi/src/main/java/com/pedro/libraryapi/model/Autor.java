@@ -1,6 +1,7 @@
 package com.pedro.libraryapi.model;
 
 import java.time.LocalDate;
+import java.util.List;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -8,6 +9,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -24,7 +26,7 @@ public class Autor {
 
 	@Id
 	@Column(name="id")
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.UUID)
 	private UUID id;
 	@Column(name="nome", length = 100, nullable = false)
 	private String nome;
@@ -32,4 +34,7 @@ public class Autor {
 	private LocalDate dataNascimento;
 	@Column(name = "nacionalidade", length = 50, nullable = false)
 	private String nacionalidade;
+	//nao eh uma coluna, mas indica ao jpa que pode ser referenciado:
+	@OneToMany(mappedBy = "autor") //qual o nome da propriedade do autor dentro de livro?
+	private List<Livro> livros;
 }
